@@ -1,0 +1,13 @@
+server:
+  port: 8084
+  
+  
+spring:
+  application:
+    name: Configuration-service
+cloud: 
+ config:
+  server:
+   git:
+   uri: https://github.com/Amolbari/config-server.git
+   clone-on-start: true
